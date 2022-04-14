@@ -2,12 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: go-app
-  backend: nodejs
 spec:
   selector:
     matchLabels:
       app: demo-go-app
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
